@@ -14,11 +14,17 @@ body, html {
 </head>
 <body>
   <div id="nav-bar">
-    nav bar
-  </div>
-  <script type="text/javascript" src="pixi.js"></script>
-  <script type="text/javascript" src="pixi-filters.js"></script>
-  <script type="text/javascript" src="viewport.js"></script>
-  <script type="text/javascript" src="neopixel.js"></script>
+    <form>
+      <input placeholder="localhost" name="spice-api-ip" placeholder="SpiceAPI Host IP Address" type="text" />
+      <input placeholder="9001" name="spice-api-port" placeholder="SpiceAPI Host Port" type="text" />
+      <input placeholder="" name="spice-api-password" placeholder="SpiceAPI Host Password" type="text" />
+      <button>Save</button>
+    </form>
+</div>
+  <script src="js/settings.js"></script>
+  <script type="text/javascript" src="js/pixi.js"></script>
+  <script type="text/javascript" src="js/pixi-filters.js"></script>
+  <script type="text/javascript" src="js/viewport.js"></script>
+  <script type="text/javascript" src="js/neopixel.js"></script>
 </body>
 </html>

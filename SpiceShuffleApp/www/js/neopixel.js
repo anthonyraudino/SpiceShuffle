@@ -310,12 +310,14 @@ function bin_to_json(bin) {
 }
 
 let socket = undefined;
-function new_websocket() {
-    if (location.hostname == "") {
-	socket = new WebSocket("ws://localhost:9002");
+function new_websocket(spiceHostIP, spiceHostPort) {
+    /* if (location.hostname == "") {
+	socket = new WebSocket(`ws://${spiceHostIP}:9002`);
     } else {
 	socket = new WebSocket(`ws://${location.hostname}:9002`);
-    }
+    } */
+
+    socket = new WebSocket(`ws://${spiceHostIP}:${spiceHostPort}`);
 
     socket.binaryType = "arraybuffer";
 
@@ -352,4 +354,18 @@ function new_websocket() {
     };
 }
 
-new_websocket();
+
+// Load saved data and populate form fields
+loadSavedData(function(savedData) {
+    if (savedData) {
+        // Import the saved IP and Port values
+        var spiceHostIP = savedData.api_ip;
+        var spiceHostPort = savedData.api_port;
+
+        // Rest of your code that uses spiceHostIP and spiceHostPort variables
+        // ...
+
+        // Start the websocket connection using the imported values
+        new_websocket(spiceHostIP, spiceHostPort);
+    }
+});
