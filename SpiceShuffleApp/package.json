@@ -14,13 +14,16 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "cordova-browser": "^7.0.0",
+    "cordova-ios": "^7.0.0",
     "cordova-plugin-file": "^8.0.0",
     "cordova-plugin-screen-orientation": "^3.0.3",
-    "cordova-plugin-statusbar": "^3.0.0"
+    "cordova-plugin-statusbar": "^3.0.0",
+    "es6-promise-plugin": "^4.2.2"
   },
   "cordova": {
     "platforms": [
-      "browser"
+      "browser",
+      "ios"
     ],
     "plugins": {
       "cordova-plugin-screen-orientation": {},

@@ -1,0 +1,49 @@
+/* Styles for the bottom navigation bar */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Background color of the navigation bar */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0; /* Add padding for better visual spacing */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+  }
+  
+  /* Adjust bottom padding to account for safe area */
+  @supports(padding-bottom: env(safe-area-inset-bottom)) {
+    .bottom-nav {
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+  }
+  
+  /* Styles for navigation links */
+  .bottom-nav a {
+    text-decoration: none;
+    color: #007AFF; /* iOS blue color */
+    font-size: 16px;
+    padding: 10px;
+  }
+
+/* Navigation item */
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #666;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Active navigation item */
+.nav-item.active {
+    color: #007aff;
+}
+
+/* FontAwesome icons */
+.nav-item i {
+    font-size: 20px;
+    margin-bottom: 4px;
+}

@@ -1,0 +1,109 @@
+/* Reset default margin and padding */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* iOS header style */
+.ios-header {
+    background-color: #007aff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* iOS content style */
+.ios-content {
+    padding: 20px;
+}
+
+/* Settings form */
+.settings-form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Save button */
+.save-button {
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+p.settings-text {
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
+span.form-title {
+    font-size: medium;
+    font-weight: bold;
+}
+
+span.form-description {
+    font-size: small;
+}
+
+/* Reset default browser styles */
+input, textarea {
+    appearance: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background-color: transparent;
+    font-family: system-ui, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for text input fields */
+  input[type="text"], input[type="password"], input[type="email"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Styling for focused state */
+  input:focus, textarea:focus {
+    border-color: #007AFF; /* iOS blue color */
+  }
+  
+  /* Styling for placeholder text */
+  input::placeholder, textarea::placeholder {
+    color: #999;
+  }
+  
+  /* Styling for buttons */
+  button {
+    padding: 10px 20px;
+    background-color: #007AFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Slightly darker shade of blue */
+  }
+  
+  input#spice-api-password {
+    background-color: #e4e4e4;
+}

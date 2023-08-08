@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>SpiceShuffle</title>
+<style>
+body, html {
+    margin: 0;
+    overflow: hidden;
+}
+</style>
+<link rel="stylesheet" href="css/settingspage.css">
+<link rel="stylesheet" href="css/bottombar.css">
+</head>
+<body>
+    <header class="ios-header">
+        <h1>Settings</h1>
+    </header>
+    <main class="ios-content">
+        <form class="settings-form">
+            <p class="settings-text"><span class="form-title">SpiceAPI IP Address</span></p>
+            <input placeholder="localhost" name="spice-api-ip" id="spice-api-ip" placeholder="SpiceAPI Host IP Address" type="text" />
+            <p class="settings-text"><span class="form-title">SpiceAPI Port</span><br />
+            <span class="form-description">This should normally be 9002<br />Unless you've changed something.</span></p>
+            <input placeholder="9002" name="spice-api-port" id="spice-api-port" placeholder="SpiceAPI Host Port" type="text" />
+            <p class="settings-text"><span class="form-title">SpiceAPI Password</span></p>
+            <input disabled placeholder="Coming soon.." name="spice-api-password" id="spice-api-password" type="text" />
+            <button class="save-button">Save Settings</button>
+        </form>
+    </main>
+
+<div>deez nuts</div>
+
+    <nav class="bottom-nav">
+        <a href="shuffler.html" class="nav-item">
+            <i class="fas fa-home"></i>
+            Shuffle
+        </a>
+        <a href="settings.html" class="nav-item active">
+            <i class="fas fa-cog"></i>
+            Settings
+        </a>
+    </nav>
+
+  <script src="cordova.js"></script>
+  <script src="js/settings.js"></script>
+</body>
+</html>

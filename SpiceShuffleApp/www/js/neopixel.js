@@ -354,18 +354,24 @@ function new_websocket(spiceHostIP, spiceHostPort) {
     };
 }
 
-
 // Load saved data and populate form fields
 loadSavedData(function(savedData) {
     if (savedData) {
+        console.log("Saved data:", savedData);
+
         // Import the saved IP and Port values
         var spiceHostIP = savedData.api_ip;
         var spiceHostPort = savedData.api_port;
 
-        // Rest of your code that uses spiceHostIP and spiceHostPort variables
-        // ...
+        console.log(savedData.api_ip);
+        console.log(savedData.api_port);
+
+        console.log("Spice Host IP:", spiceHostIP);
+        console.log("Spice Host Port:", spiceHostPort);
 
         // Start the websocket connection using the imported values
         new_websocket(spiceHostIP, spiceHostPort);
+    } else {
+        console.log("No saved data found.");
     }
 });

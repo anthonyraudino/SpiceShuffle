@@ -1,1 +1,1 @@
-{"plugins":["cordova-plugin-screen-orientation","cordova-plugin-statusbar"]}
+{"plugins":["cordova-plugin-screen-orientation","cordova-plugin-statusbar","cordova-plugin-file","es6-promise-plugin"]}
